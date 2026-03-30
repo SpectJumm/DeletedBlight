@@ -1,0 +1,33 @@
+{
+  "rootNamespace": "DeletedBlight",
+  "fileMap": {
+    "Content\\Projectiles\\BlightedFeatherFriendly.cs": "DeletedBlight.Content.Projectiles",
+    "Content\\Projectiles\\ToothofCthulhuProjectile.cs": "DeletedBlight.Content.Projectiles",
+    "Content/Projectiles/SnowgraveIce.cs": "DeletedBlight.Content.Projectiles",
+    "Content\\Projectiles\\ArcticAntlerHoldout.cs": "DeletedBlight.Content.Projectiles",
+    "obj\\Debug\\net8.0\\DeletedBlight.AssemblyInfo.cs": "DeletedBlight.obj.Debug.net8_0",
+    "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "DeletedBlight.obj.Debug.net8_0",
+    "Content\\NPCs\\Bosses\\DeletedBlight\\DeletedBlightBoss.BehaviorUtilities.cs": "DeletedBlight.Content.NPCs.Bosses.DeletedBlight",
+    "Content\\NPCs\\Bosses\\DeletedBlight\\Behaviors\\AnimationStates\\DeletedBlightBoss.BehaviorStates.DeathAnimation.cs": "DeletedBlight.Content.NPCs.Bosses.DeletedBlight.Behaviors.AnimationStates",
+    "Content/NPCs/Bosses/DeletedBlight/Behaviors/AnimationStates/DeletedBlightBoss.BehaviorStates.DeathAnimation.cs": "DeletedBlight.Content.NPCs.Bosses.DeletedBlight.Behaviors.AnimationStates",
+    "Sounds\\Item\\Snowgrave.cs": "DeletedBlight.Sounds.Item",
+    "Content\\NPCs\\Bosses\\AyakaDaiakuma\\AyakaDaiakumaHead.cs": "DeletedBlight.Content.NPCs.Bosses.AyakaDaiakuma",
+    "Content\\Items\\Weapons\\Summoner\\Summoner.cs": "DeletedBlight.Content.Items.Weapons.Summoner",
+    "Content\\NPCs\\Bosses\\AyakaDaiakuma\\AyakaDaiakumaTail.cs": "DeletedBlight.Content.NPCs.Bosses.AyakaDaiakuma",
+    "Sounds\\SummonItem\\SummonItem.cs": "DeletedBlight.Sounds.SummonItem",
+    "Sounds\\SummonItems\\SummonItems.cs": "DeletedBlight.Sounds.SummonItems",
+    "Sounds\\Sounds.cs": "DeletedBlight.Sounds",
+    "BlightPlayer\\BlightPlayer.cs": "DeletedBlight.BlightPlayer",
+    "Content\\NPCs\\BlightGlobalNPC.cs": "DeletedBlight.Content.NPCs",
+    "Content\\NPCs\\Pets\\BattleCat\\BattleCatProj.cs": "DeletedBlight.Content.NPCs.Pets.BattleCat",
+    "Assets\\assets.cs": "DeletedBlight.Assets",
+    "Assets\\AutoloadedEffects\\autoloadedeffects.cs": "DeletedBlight.Assets.AutoloadedEffects",
+    "Assets\\AutoloadedEffects\\Shaders\\shaders.cs": "DeletedBlight.Assets.AutoloadedEffects.Shaders",
+    "Assets\\Textures\\textures.cs": "DeletedBlight.Assets.Textures",
+    "Assets\\Textures\\Noise\\Noise.cs": "DeletedBlight.Assets.Textures.Noise",
+    "Items\\Dyes\\TestDye.cs": "DeletedBlight.Items.Dyes",
+    "Projectiles\\Ranged\\EngineersMegaphoneProjectile.cs": "DeletedBlight.Projectiles.Ranged",
+    "Items/Weapons/Ranged/EngineersMegaphone.cs": "DeletedBlight.Items.Weapons.Ranged",
+    "Items\\Weapons\\Magic\\VesselsFangs.cs": "DeletedBlight.Items.Weapons.Magic"
+  }
+}
