@@ -1,0 +1,157 @@
+Projectiles: {
+	ToothofCthulhuProjectile.DisplayName: Tooth of Cthulhu
+	SnowgraveIce.DisplayName: Snowgrave Ice
+	EggBombFriendly.DisplayName: Egg Bomb
+	BlightedFeatherFriendly.DisplayName: Blighted Feather
+	BirchChip.DisplayName: Birch Chip
+	ArcticAntlerHoldout.DisplayName: Arctic Antler
+	BigFirefly.DisplayName: Big Firefly
+	AcceleratingArrowProjectile.DisplayName: Accelerating Arrow
+	VileBulletProjectile.DisplayName: Vile Bullet
+	CoconutGunProjectile.DisplayName: Exploding Coconut
+	BattleCatProj.DisplayName: Battle Cat
+	AcidVomit.DisplayName: Acid Vomit
+	EngineersMegaphoneProjectile.DisplayName: Engineers Megaphone Projectile
+}
+
+NPCs: {
+	ZombieSlime.DisplayName: Zombie Slime
+	EctoSlime.DisplayName: Ecto Slime
+	AyakaDaiakumaTail.DisplayName: Ayaka Daiakuma
+	AyakaDaiakumaHead.DisplayName: Ayaka Daiakuma
+	AyakaDaiakumaBodyAlt.DisplayName: Ayaka Daiakuma
+	AyakaDaiakumaBody.DisplayName: Ayaka Daiakuma
+	ArmoredSnake.DisplayName: Armored Snake
+}
+
+Items: {
+	FireflyLantern: {
+		Tooltip: Summons a firefly to fight for you
+		DisplayName: Firefly Lantern
+	}
+
+	FowlPlay: {
+		Tooltip: ""
+		DisplayName: Fowl Play
+	}
+
+	ToothofCthulhu: {
+		Tooltip: ""
+		DisplayName: Tooth of Cthulhu
+	}
+
+	TemplateSword: {
+		Tooltip: You probably shouldn't have this...
+		DisplayName: Template Sword
+	}
+
+	ComicallyLargeMetalSword: {
+		Tooltip: --JOKE ITEM--
+		DisplayName: Comically Large Metal Sword
+	}
+
+	TrolleyProblem: {
+		Tooltip: ""
+		DisplayName: Trolley Problem
+	}
+
+	BookofBirch: {
+		Tooltip: Shoots woodchips at your enemies
+		DisplayName: Book of Birch
+	}
+
+	ArcticAntler: {
+		Tooltip:
+			'''
+			Silence your enemies in a torrent of ice
+			'Proceed'
+			'''
+		DisplayName: Arctic Antler
+	}
+
+	RitualKnife: {
+		Tooltip:
+			'''
+			Summons the Codebreaker
+			Not Consumable
+			'Best pray to your gods, provided she hasn't consumed them all...'
+			'''
+		DisplayName: Ritual Knife
+	}
+
+	HornofPlenty: {
+		Tooltip: ""
+		DisplayName: Horn of Plenty
+		RestoreLifeText: Mods.DeletedBlight.Items.HornofPlenty.RestoreLifeText
+	}
+
+	AcceleratingArrow: {
+		DisplayName: Accelerating Arrow
+		Tooltip: Accelerates and increases in damage as it travels
+	}
+
+	VileBullet: {
+		DisplayName: Vile Bullet
+		Tooltip:
+			'''
+			Decelerates and increases in damage as it travels
+			Explodes upon reaching slow enough speed
+			'''
+	}
+
+	CoconutGun: {
+		DisplayName: Coconut Gun
+		Tooltip:
+			'''
+			A coconut gun that can fire in spurts
+			If it shoots you, it's gonna hurt
+			'''
+	}
+
+	BayonetRifle: {
+		DisplayName: Bayonet Rifle
+		Tooltip: ""
+	}
+
+	CatFood: {
+		DisplayName: Cat Food
+		Tooltip: ""
+	}
+
+	FirstDye: {
+		DisplayName: First Dye
+		Tooltip: ""
+	}
+
+	Cactome: {
+		DisplayName: Cactome
+		Tooltip: ""
+	}
+
+	TestDye: {
+		DisplayName: Test Dye
+		Tooltip: ""
+	}
+
+	EngineersMegaphone: {
+		DisplayName: Engineers Megaphone
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	BigFireflyBuff: {
+		Description: The firefly will fight for you
+		DisplayName: Big Firefly Buff
+	}
+
+	BayonetStabbed: {
+		DisplayName: Bayonet Stabbed
+		Description: Mods.DeletedBlight.Buffs.BayonetStabbed.Description
+	}
+
+	BattleCatBuff: {
+		Description: "'It's okay to cry. It's okay to run away. You were not made that strong.'"
+		DisplayName: Battle Cat Buff
+	}
+}

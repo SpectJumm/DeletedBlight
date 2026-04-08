@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Warning suppression (they annoyed me) -->
+    <NoWarn>MSB3270</NoWarn>
+    <NoWarn>CS8603</NoWarn>
+    <NoWarn>CS8603</NoWarn>
+  </PropertyGroup>
+
+	<!-- References -->
+	<ItemGroup>
+    <!-- Include all DLLs in lib/ -->
+  <Reference Include="ReLogic.Content">
+    <HintPath>$(TModLoaderDir)\ReLogic.Content.dll</HintPath>
+  </Reference>
+    <Reference Include="lib/Daybreak.dll"/>
+	</ItemGroup>
+
+</Project>

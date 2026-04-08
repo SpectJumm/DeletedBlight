@@ -1,0 +1,8 @@
+displayName = Deleted Blight Mod (Pre-Alpha)
+author = SpectJumm
+version = 0.0.1
+buildIgnore = .vs\*
+modReferences = Daybreak
+hideCode = false
+hideResources = false
+includeSource = true

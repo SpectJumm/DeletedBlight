@@ -1,0 +1,1 @@
+namespace DeletedBlight.NPCs.Summons;
