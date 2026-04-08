@@ -3,7 +3,7 @@
   "fileMap": {
     "Content\\Projectiles\\BlightedFeatherFriendly.cs": "DeletedBlight.Content.Projectiles",
     "Content\\Projectiles\\ToothofCthulhuProjectile.cs": "DeletedBlight.Content.Projectiles",
-    "Content/Projectiles/SnowgraveIce.cs": "DeletedBlight.Content.Projectiles",
+    "Content\\Projectiles\\SnowgraveIce.cs": "DeletedBlight.Content.Projectiles",
     "Content\\Projectiles\\ArcticAntlerHoldout.cs": "DeletedBlight.Content.Projectiles",
     "obj\\Debug\\net8.0\\DeletedBlight.AssemblyInfo.cs": "DeletedBlight.obj.Debug.net8_0",
     "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "DeletedBlight.obj.Debug.net8_0",
@@ -27,6 +27,6 @@
     "Assets\\Textures\\Noise\\Noise.cs": "DeletedBlight.Assets.Textures.Noise",
     "Items\\Dyes\\TestDye.cs": "DeletedBlight.Items.Dyes",
     "Projectiles\\Ranged\\EngineersMegaphoneProjectile.cs": "DeletedBlight.Projectiles.Ranged",
-    "Items/Weapons/Ranged/EngineersMegaphone.cs": "DeletedBlight.Items.Weapons.Ranged"
+    "Items\\Weapons\\Ranged\\EngineersMegaphone.cs": "DeletedBlight.Items.Weapons.Ranged"
   }
 }
