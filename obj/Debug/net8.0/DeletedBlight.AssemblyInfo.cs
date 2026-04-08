@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeletedBlight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+173c4b59e49de0db79d2efb4024737abb28e5ce7")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeletedBlight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeletedBlight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,7 +5,6 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using DeletedBlight.Projectiles.Magic;
 using Terraria.Audio;
-using DeletedBlight.Sounds.Items;
 
 namespace DeletedBlight.Items.Weapons.Magic
 {
