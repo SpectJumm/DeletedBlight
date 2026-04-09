@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SpectJumm\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DeletedBlight\\DeletedBlight.csproj": {}
+    "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/DeletedBlight.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SpectJumm\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DeletedBlight\\DeletedBlight.csproj": {
+    "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/DeletedBlight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SpectJumm\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DeletedBlight\\DeletedBlight.csproj",
+        "projectUniqueName": "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/DeletedBlight.csproj",
         "projectName": "DeletedBlight",
-        "projectPath": "C:\\Users\\SpectJumm\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DeletedBlight\\DeletedBlight.csproj",
-        "packagesPath": "C:\\Users\\SpectJumm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SpectJumm\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\DeletedBlight\\obj\\",
+        "projectPath": "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/DeletedBlight.csproj",
+        "packagesPath": "/home/spectjumm/.nuget/packages/",
+        "outputPath": "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SpectJumm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/spectjumm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/home/spectjumm/.local/share/tml-build/feed/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,17 +33,24 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Krafs.Publicizer": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "tModLoader": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2026.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,26 +62,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
