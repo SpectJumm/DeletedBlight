@@ -24,6 +24,6 @@ technique Technique1
 {
     pass ChromaticAberration
     {
-        PixelShader = compile ps_2_0 ChromaticAberration();
+        PixelShader = compile ps_2_0 ChromaticAberration(); // REMINDER: GET A .FX TO .XMB / .FXC COMPILER FOR LINUX
     }
 }

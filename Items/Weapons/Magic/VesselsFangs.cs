@@ -1,4 +1,5 @@
 using DeletedBlight.Projectiles.Magic;
+using DeletedBlight.Rarities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
@@ -11,6 +12,7 @@ namespace DeletedBlight.Items.Weapons.Magic {
         public override void SetDefaults() {
             Item.width = 80;
             Item.height = 76;
+            // TODO: Fix the hitbox/drawing offset in the JawTop and JawBottom projectiles
             Item.scale = 0.5f;
             Item.useTime = 60;
             Item.useAnimation = 60;
@@ -18,8 +20,9 @@ namespace DeletedBlight.Items.Weapons.Magic {
             Item.mana = 64;
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.shoot = ModContent.ProjectileType<BirchChip>();
+            Item.shoot = ModContent.ProjectileType<BirchChip>(); // It legit does not matter what I shoot here
             Item.useStyle = ItemUseStyleID.Shoot;
+            Item.rare = ModContent.RarityType<BlightGreen>();
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
