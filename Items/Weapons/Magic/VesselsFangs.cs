@@ -25,7 +25,7 @@ namespace DeletedBlight.Items.Weapons.Magic {
         {
             Projectile.NewProjectile(source, new Vector2(Main.MouseWorld.X, Main.MouseWorld.Y - 150f), new Vector2(0, -12f), ModContent.ProjectileType<JawTop>(), damage, knockback, player.whoAmI);
             Projectile.NewProjectile(source, new Vector2(Main.MouseWorld.X, Main.MouseWorld.Y + 150f), new Vector2(0, 12f), ModContent.ProjectileType<JawBottom>(), damage, knockback, player.whoAmI);
-            SoundEngine.PlaySound(SoundID.Pixie);
+            SoundEngine.PlaySound(SoundID.NPCDeath13);
             return true;
         }
 
