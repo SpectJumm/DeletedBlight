@@ -26,6 +26,7 @@ namespace DeletedBlight.Projectiles.Magic
             Projectile.friendly = true;
             Projectile.light = 0.8f;
             Projectile.DamageType = DamageClass.Magic;
+            Projectile.timeLeft = 120;
             Projectile.usesIDStaticNPCImmunity = true;
             Projectile.idStaticNPCHitCooldown = 2;
         }
