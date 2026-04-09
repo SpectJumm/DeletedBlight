@@ -12,6 +12,8 @@ Projectiles: {
 	BattleCatProj.DisplayName: Battle Cat
 	AcidVomit.DisplayName: Acid Vomit
 	EngineersMegaphoneProjectile.DisplayName: Engineers Megaphone Projectile
+	JawTop.DisplayName: Jaw Top
+	JawBottom.DisplayName: Jaw Bottom
 }
 
 NPCs: {
@@ -135,6 +137,11 @@ Items: {
 
 	EngineersMegaphone: {
 		DisplayName: Engineers Megaphone
+		Tooltip: ""
+	}
+
+	VesselsFangs: {
+		DisplayName: Vessels Fangs
 		Tooltip: ""
 	}
 }
