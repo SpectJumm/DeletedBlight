@@ -21,9 +21,9 @@ namespace DeletedBlight.Rarities
         void IRarityTextRenderer.RenderText(SpriteBatch sb, DynamicSpriteFont font, string text, Vector2 position, Color color, float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, RarityDrawContext drawContext, float maxWidth, float spread)
         {
             Matrix originalMatrix = drawContext.Ui ? Main.UIScaleMatrix : Main.GameViewMatrix.TransformationMatrix;
-            sb.End(out var snapshot);
+                        sb.End(out var snapshot);
             var customEffect = ModContent.Request<Effect>("DeletedBlight/Assets/AutoloadedEffects/Shaders/OverlayModifiers/ChromaticAberration");
-            sb.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, customEffect, originalMatrix);
+            sb.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, customEffect.Value, originalMatrix);
             ChatManager.DrawColorCodedStringWithShadow(sb, font, text, position, color, rotation, origin, scale, maxWidth, spread);
             sb.End();
             sb.Begin(in snapshot);
