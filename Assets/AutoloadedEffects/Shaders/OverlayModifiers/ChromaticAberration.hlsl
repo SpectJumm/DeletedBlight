@@ -11,7 +11,7 @@ float4 ChromaticAberration(float4 sampleColor : COLOR0, float2 coords : TEXCOORD
 {
     float4 color = tex2D(baseTexture, coords);
 
-    float splitDistance = sin(tan(uTime)) / 50; // Adjust the multiplier to control the intensity of the effect
+    float splitDistance = 0.4; // Adjust the multiplier to control the intensity of the effect
     color.r = tex2D(baseTexture, coords + float2(-splitDistance, 0)).r; // Shift red channel left
     color.b = tex2D(baseTexture, coords + float2(splitDistance, 0)).b; // Shift blue channel right
     color.g = tex2D(baseTexture, coords).g; // Keep green channel centered
@@ -24,6 +24,6 @@ technique Technique1
 {
     pass ChromaticAberration
     {
-        PixelShader = compile ps_2_0 ChromaticAberration(); // REMINDER: GET A .FX TO .XMB / .FXC COMPILER FOR LINUX
+        PixelShader = compile ps_2_0 ChromaticAberration();
     }
 }
