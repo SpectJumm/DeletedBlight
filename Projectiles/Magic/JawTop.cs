@@ -41,7 +41,7 @@ namespace DeletedBlight.Projectiles.Magic
                 FangsClose = true; // Turning on FangsClose makes the projectile able to do damage
                 Projectile.velocity.Y *= -1f; // Reverse direction
             } else {
-                Projectile.velocity.Y *= 1.15f; // Slam down in the other direction!
+                Projectile.velocity.Y *= 1.12f; // Slam down in the other direction!
             }
         }
         public override bool PreDraw(ref Color lightColor) {
