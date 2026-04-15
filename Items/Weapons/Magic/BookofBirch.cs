@@ -14,7 +14,7 @@
                 Item.damage = 9;
                 Item.useTime = 30;
                 Item.useAnimation = 30;
-                Item.mana = 4;
+                Item.mana = 3;
                 Item.scale = 0.5f;
                 Item.shoot = ModContent.ProjectileType<BirchChip>();
                 Item.knockBack = 2f;
