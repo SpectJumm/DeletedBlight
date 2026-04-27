@@ -4,6 +4,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using DeletedBlight.Projectiles.Summons;
+using Terraria.Social.Base;
 
 namespace DeletedBlight.Items.Weapons.DisposableSummoner
 {
@@ -18,18 +19,21 @@ namespace DeletedBlight.Items.Weapons.DisposableSummoner
         {
             Item.width = 18;
             Item.height = 26;
+            Item.damage = 26;
+            Item.mana = 0;
             Item.useTime = 30;
             Item.useAnimation = 30;
             Item.DamageType = DamageClass.Summon;
+            Item.useStyle = ItemUseStyleID.RaiseLamp;
             Item.consumable = false;
             Item.noMelee = true;
+            Item.UseSound = SoundID.Item9; // pretty sure this was the "magic happens" sound
         }
         public override bool? UseItem(Player player)
         {
             if (player.whoAmI == Main.myPlayer)
             {
                 Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center, Vector2.Zero, ModContent.ProjectileType<ShadowflameApparitionFriendly>(), 0, 0f, player.whoAmI);
-				player.AddBuff(Item.buffType, 100);
             }
             return true;
         }    

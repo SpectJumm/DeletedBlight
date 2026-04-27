@@ -257,22 +257,17 @@ namespace DeletedBlight.Projectiles.Summons
 				}
 				else {
 					// Slow down the minion if closer to the player
-					speed = 4f;
+					speed = 6f;
 					inertia = 80f;
 				}
 
-				if (distanceToIdlePosition > 20f) {
+				if (distanceToIdlePosition > 40f) {
 					// The immediate range around the player (when it passively floats about)
 
-					// This is a simple movement formula using the two parameters and its desired direction to create a "homing" movement
+					// Movement formula to have the minion "circle" around the player when idle
 					vectorToIdlePosition.Normalize();
 					vectorToIdlePosition *= speed;
-					Projectile.velocity = (Projectile.velocity * (inertia - 1) + vectorToIdlePosition) / inertia;
-				}
-				else if (Projectile.velocity == Vector2.Zero) {
-					// If there is a case where it's not moving at all, give it a little "poke"
-					Projectile.velocity.X = -0.15f;
-					Projectile.velocity.Y = -0.05f;
+					Projectile.spriteDirection = Math.Sign(vectorToIdlePosition.X);
 				}
 			}
 		}

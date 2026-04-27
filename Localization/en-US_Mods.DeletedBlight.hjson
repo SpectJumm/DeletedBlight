@@ -14,6 +14,7 @@ Projectiles: {
 	EngineersMegaphoneProjectile.DisplayName: Engineers Megaphone Projectile
 	JawTop.DisplayName: Jaw Top
 	JawBottom.DisplayName: Jaw Bottom
+	ShadowflameApparitionFriendly.DisplayName: Shadowflame Apparition Friendly
 }
 
 NPCs: {
@@ -142,6 +143,11 @@ Items: {
 
 	VesselsFangs: {
 		DisplayName: Vessels Fangs
+		Tooltip: ""
+	}
+
+	ShadowflameLantern: {
+		DisplayName: Shadowflame Lantern
 		Tooltip: ""
 	}
 }

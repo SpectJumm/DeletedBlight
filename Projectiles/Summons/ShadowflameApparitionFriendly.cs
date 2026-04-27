@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace DeletedBlight.Projectiles.Summons
 {
@@ -15,9 +15,10 @@ namespace DeletedBlight.Projectiles.Summons
         }
         public override void SetDefaults()
         {
-            Projectile.width = 52;
-            Projectile.height = 38;
+            Projectile.width = 26;
+            Projectile.height = 19;
             Projectile.damage = 24;
+            Projectile.scale = 2f;
             Projectile.friendly = true; // Only controls if it deals damage to enemies on contact (more on that later)
             Projectile.minion = true; // Declares this as a minion (has many effects)
             Projectile.DamageType = DamageClass.Summon; // Declares the damage type (needed for it to deal damage)
@@ -37,6 +38,17 @@ namespace DeletedBlight.Projectiles.Summons
         }
         public override void AI()
         {
+            Projectile.frameCounter++;
+            if (Projectile.frameCounter >= 6)
+            {
+                Projectile.frame++;
+                Projectile.frameCounter = 0;
+            }
+            if (Projectile.frame >= Main.projFrames[Projectile.type])
+            {
+                Projectile.frame = 0;
+            }
+
             Player owner = Main.player[Projectile.owner];
 
             if (!CheckActive(owner))
@@ -44,10 +56,10 @@ namespace DeletedBlight.Projectiles.Summons
                 return;
             }
 
-            /*GeneralBehavior(owner, out Vector2 vectorToIdlePosition, out float distanceToIdlePosition);*/
-			SearchForTargets(owner, out bool foundTarget, out float distanceFromTarget, out Vector2 targetCenter);
-			/*Movement(foundTarget, distanceFromTarget, targetCenter, distanceToIdlePosition, vectorToIdlePosition);
-			Visuals();*/
+            // GeneralBehavior(owner, out Vector2 vectorToIdlePosition, out float distanceToIdlePosition);
+            SearchForTargets(owner, out bool foundTarget, out float distanceFromTarget, out Vector2 targetCenter);
+            //Movement(foundTarget, distanceFromTarget, targetCenter, distanceToIdlePosition, vectorToIdlePosition);
+			//Visuals();
         }
 
         // This is the "active check", makes sure the minion is alive while the player is alive, and despawns if not
@@ -65,7 +77,7 @@ namespace DeletedBlight.Projectiles.Summons
         private void SearchForTargets(Player owner, out bool foundTarget, out float distanceFromTarget, out Vector2 targetCenter)
         {
             // Starting search distance
-            distanceFromTarget = 600f;
+            distanceFromTarget = 1200f;
             targetCenter = Projectile.position;
             foundTarget = false;
 
@@ -76,7 +88,7 @@ namespace DeletedBlight.Projectiles.Summons
                 float between = Vector2.Distance(npc.Center, Projectile.Center);
 
                 // Reasonable distance away so it doesn't target across multiple screens
-                if (between < 2000f)
+                if (between < 4000f)
                 {
                     distanceFromTarget = between;
                     targetCenter = npc.Center;
@@ -108,12 +120,58 @@ namespace DeletedBlight.Projectiles.Summons
                     }
                 }
             }
-
             // friendly needs to be set to true so the minion can deal contact damage
             // friendly needs to be set to false so it doesn't damage things like target dummies while idling
             // Both things depend on if it has a target or not, so it's just one assignment here
             // You don't need this assignment if your minion is shooting things instead of dealing contact damage
             Projectile.friendly = foundTarget;
+        }
+        private void Movement(bool foundTarget, float distanceFromTarget, Vector2 targetCenter, float distanceToIdlePosition, Vector2 vectorToIdlePosition)
+        {
+            // Default movement parameters (here for attacking)
+            float speed = 8f;
+            float inertia = 20f;
+
+            if (foundTarget)
+            {
+                // Minion has a target: attack (here, fly towards the enemy)
+                if (distanceFromTarget > 40f)
+                {
+                    // The immediate range around the target (so it doesn't latch onto it when close)
+                    Vector2 direction = targetCenter - Projectile.Center;
+                    direction.Normalize();
+                    direction *= speed;
+                    Projectile.spriteDirection = Math.Sign(targetCenter.X - Projectile.Center.X);
+
+                    Projectile.velocity = (Projectile.velocity * (inertia - 1) + direction) / inertia;
+                }
+            }
+            else
+            {
+                // Minion doesn't have a target: return to player and idle
+                if (distanceToIdlePosition > 600f)
+                {
+                    // Speed up the minion if it's away from the player
+                    speed = 12f;
+                    inertia = 60f;
+                }
+                else
+                {
+                    // Slow down the minion if closer to the player
+                    speed = 4f;
+                    inertia = 80f;
+                }
+
+                if (distanceToIdlePosition > 40f)
+                {
+                    // The immediate range around the player (when it passively floats about)
+
+                    // Movement formula to have the minion "circle" around the player when idle
+                    vectorToIdlePosition.Normalize();
+                    vectorToIdlePosition *= speed;
+                    Projectile.spriteDirection = Math.Sign(vectorToIdlePosition.X);
+                }
+            }
         }
     }
 }
