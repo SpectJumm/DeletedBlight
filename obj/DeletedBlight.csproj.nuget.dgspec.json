@@ -48,7 +48,7 @@
             "tModLoader": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2026.2.3, )"
+              "version": "[2026.2.3.2, )"
             }
           },
           "imports": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.126/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
