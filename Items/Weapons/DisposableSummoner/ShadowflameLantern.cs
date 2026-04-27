@@ -4,8 +4,6 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using DeletedBlight.Projectiles.Summons;
-using Terraria.Social.Base;
-
 namespace DeletedBlight.Items.Weapons.DisposableSummoner
 {
 
