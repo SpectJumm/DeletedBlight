@@ -10,9 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute("tModLoader")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeletedBlight")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40f8bfe6e611e93166f817dd0ae2091cb9d3b759")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeletedBlight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeletedBlight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,7 +20,6 @@
           "net8.0"
         ],
         "sources": {
-          "/home/spectjumm/.local/share/tml-build/feed/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,19 +37,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Krafs.Publicizer": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "tModLoader": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2026.2.3.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -67,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.126/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

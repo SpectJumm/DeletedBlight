@@ -39,6 +39,8 @@ namespace DeletedBlight
 				// GameShaders.Misc.BindShader(ModContent.RarityType<BlightGreen>(), new MiscShaderData(chromaticAberration, "ChromaticAberration"));
 				// Commenting this code out because I'm too stupid to make it work. ;-;
 				GameShaders.Armor.BindShader(ModContent.ItemType<TestDye>(), new ArmorShaderData(chromaticAberration, "ChromaticAberration"));
+				Asset<Effect> anotherDye = Assets.Request<Effect>("Assets/AutoloadedEffects/Shaders/Dyes/AnotherDye");
+				GameShaders.Armor.BindShader(ModContent.ItemType<BSDye>(), new ArmorShaderData(anotherDye, "SomeBullshit").UseImage(Assets.Request<Texture2D>("Assets/Textures/Noise/AcidNoise")));
 				
 
 			}
