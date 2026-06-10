@@ -1,6 +1,0 @@
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.csproj.AssemblyReference.cache
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.GeneratedMSBuildEditorConfig.editorconfig
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.AssemblyInfoInputs.cache
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.AssemblyInfo.cs
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.csproj.CoreCompileInputs.cache
-/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/obj/Debug/net8.0/DeletedBlight.sourcelink.json
