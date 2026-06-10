@@ -22,6 +22,7 @@ namespace DeletedBlight
 	{
 		public override void Load()
 		{
+			#region Shaders
 			if (Main.netMode != NetmodeID.Server)
 			{
 				// This is where we load our shader, and add it to the filter.
@@ -44,6 +45,7 @@ namespace DeletedBlight
 				
 
 			}
+			#endregion Shaders
 		}
 	}
 }

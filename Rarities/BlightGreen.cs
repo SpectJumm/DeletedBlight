@@ -6,7 +6,6 @@ using ReLogic.Graphics;
 using Terraria;
 using Terraria.UI.Chat;
 using Daybreak.Common.Features.Rarities;
-using Terraria.Graphics.Shaders;
 using Daybreak.Common.Rendering;
 
 namespace DeletedBlight.Rarities

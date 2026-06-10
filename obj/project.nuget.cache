@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "X5cS9TeiwIfV+C10HlKJJsSHtEKFMi2Mx5EOyPSesXtYDs4e3WFpaXoZVB1kgqEjajVBvrzAk87RWmLv7WJAUw==",
+  "dgSpecHash": "wIgKhTQUZc5Ixko2n3bWZggiyQ76DdfLEibP8jDL5+O0S0iPFh/qtf+iVa0mGljIDZC4G7/16oc8wejNJ+texQ==",
   "success": true,
   "projectFilePath": "/home/spectjumm/.local/share/Terraria/tModLoader/ModSources/DeletedBlight/DeletedBlight.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/spectjumm/.nuget/packages/krafs.publicizer/2.3.0/krafs.publicizer.2.3.0.nupkg.sha512",
+    "/home/spectjumm/.nuget/packages/tmodloader/2026.4.3/tmodloader.2026.4.3.nupkg.sha512"
+  ],
   "logs": []
 }
