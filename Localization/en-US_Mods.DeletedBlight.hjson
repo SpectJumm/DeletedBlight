@@ -15,6 +15,7 @@ Projectiles: {
 	JawTop.DisplayName: Jaw Top
 	JawBottom.DisplayName: Jaw Bottom
 	ShadowflameApparitionFriendly.DisplayName: Shadowflame Apparition Friendly
+	SlimeballProjectile.DisplayName: Slimeball Projectile
 }
 
 NPCs: {
@@ -148,6 +149,16 @@ Items: {
 
 	ShadowflameLantern: {
 		DisplayName: Shadowflame Lantern
+		Tooltip: ""
+	}
+
+	BSDye: {
+		DisplayName: B S Dye
+		Tooltip: ""
+	}
+
+	Slimeball: {
+		DisplayName: Slimeball
 		Tooltip: ""
 	}
 }
