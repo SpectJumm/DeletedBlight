@@ -18,9 +18,11 @@ float2 uLegacyArmorSheetSize;
 
 float4 main(float4 sampleColor : COLOR0, float2 coords : TEXCOORD0) : COLOR
 {
-    float4 color = tex2D(uImage0, coords);
-    float4 noise = tex2D(uImage1, coords * uImageSize0 / uImageSize1 + float2(uTime * 0.1, uTime * 0.1));
-    float luminosity = (color.r + color.g + color.b) / 3;
+    float4 color = tex2D(uImage0, coords); // Sample the base texture
+    color.g = 0;
+    color.b = 0;
+    color.r = 1;
+
     return color;
 }
 technique Technique1
