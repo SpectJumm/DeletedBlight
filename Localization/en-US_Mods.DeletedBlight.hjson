@@ -16,6 +16,7 @@ Projectiles: {
 	JawBottom.DisplayName: Jaw Bottom
 	ShadowflameApparitionFriendly.DisplayName: Shadowflame Apparition Friendly
 	SlimeballProjectile.DisplayName: Slimeball Projectile
+	TrapperTapperFlail.DisplayName: Trapper Tapper Flail
 }
 
 NPCs: {

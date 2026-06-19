@@ -13,7 +13,7 @@ namespace DeletedBlight.Items.Weapons.Magic {
             Item.width = 80;
             Item.height = 76;
             // TODO: Fix the hitbox/drawing offset in the JawTop and JawBottom projectiles
-            Item.scale = 0.5f;
+            Item.scale = 0.25f;
             Item.useTime = 60;
             Item.useAnimation = 60;
             Item.damage = 356;
