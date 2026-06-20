@@ -32,13 +32,17 @@ namespace DeletedBlight.NPCs.Bosses.AyakaDaiakuma
             NPC.friendly = false;
             Music = MusicID.Plantera; // placeholder until I compose something better
 
-            if (Main.getGoodWorld) {
+            if (Main.getGoodWorld)
+            {
                 NPC.damage = 99999; // Make her head instakill in GFB
             }
-            else if (Main.zenithWorld) {
+            else if (Main.zenithWorld)
+            {
                 NPC.damage = 99999; // Make her head instakill in Zenith
                 NPC.scale *= 2.5f; // Girl put on some weight lmfao
-            } else {
+            }
+            else
+            {
                 NPC.damage = 120;
                 NPC.scale = 2f;
             }

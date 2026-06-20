@@ -6,7 +6,7 @@ using Terraria.ModLoader.Utilities;
 
 namespace DeletedBlight.NPCs.Enemies
 {
-    
+
     public class ZombieSlime : ModNPC
     {
         public override void SetStaticDefaults()

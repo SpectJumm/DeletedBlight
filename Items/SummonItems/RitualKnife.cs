@@ -37,13 +37,14 @@ namespace DeletedBlight.Items.SummonItems
             if (Main.netMode != NetmodeID.MultiplayerClient)
             {
                 NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<AyakaDaiakumaHead>());
-            } else
+            }
+            else
             {
                 NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, -1, -1, null, player.whoAmI, ModContent.NPCType<AyakaDaiakumaHead>());
             }
             return true;
         }
-    
+
         public override void AddRecipes()
         {
             CreateRecipe().

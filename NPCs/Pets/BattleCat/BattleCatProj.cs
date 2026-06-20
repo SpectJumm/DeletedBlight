@@ -21,7 +21,7 @@ namespace DeletedBlight.NPCs.Pets.BattleCat
             Projectile.penetrate = -1;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = true;
-            }
+        }
         public override bool PreAI()
         {
             Player player = Main.player[Projectile.owner];
@@ -42,13 +42,14 @@ namespace DeletedBlight.NPCs.Pets.BattleCat
                 Projectile.Kill();
                 return;
             }
-        Visuals();
+            Visuals();
         }
-        private void Visuals() {
-			// So it will lean slightly towards the direction it's moving
-			Projectile.rotation = Projectile.velocity.X * 0.03f;
+        private void Visuals()
+        {
+            // So it will lean slightly towards the direction it's moving
+            Projectile.rotation = Projectile.velocity.X * 0.03f;
 
-			// This is a simple "loop through all frames from top to bottom" animation
+            // This is a simple "loop through all frames from top to bottom" animation
             Projectile.frameCounter++;
             if (Projectile.frameCounter >= 2)
             {

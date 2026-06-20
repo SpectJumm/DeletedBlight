@@ -34,7 +34,7 @@ namespace DeletedBlight.Projectiles.Ranged
         }
         public override void AI()
         {
-            
+
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {

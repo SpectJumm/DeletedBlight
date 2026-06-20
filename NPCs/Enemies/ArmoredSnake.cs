@@ -56,7 +56,7 @@ namespace DeletedBlight.NPCs.Enemies
             NPC.ai[0]++; // Increment the cooldown timer
             NPC.spriteDirection = NPC.direction; // Face the direction of movement
             NPC.velocity.Y += 0.1f; // Apply gravity
-            
+
             if (NPC.justHit)
             {
                 NPC.ai[0] = 0; // Reset the cooldown timer when hit

@@ -7,9 +7,12 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Magic {
-    public class VesselsFangs : ModItem {
-        public override void SetDefaults() {
+namespace DeletedBlight.Items.Weapons.Magic
+{
+    public class VesselsFangs : ModItem
+    {
+        public override void SetDefaults()
+        {
             Item.width = 80;
             Item.height = 76;
             // TODO: Fix the hitbox/drawing offset in the JawTop and JawBottom projectiles

@@ -13,10 +13,11 @@ namespace DeletedBlight.Projectiles.Magic
         public ref float FangsOpen => ref Projectile.ai[0];
         public bool FangsClose = false;
         public override bool? CanDamage() => FangsClose;
-        public override void SetStaticDefaults() {
-			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 5; // The length of old position to be recorded
-			ProjectileID.Sets.TrailingMode[Projectile.type] = 0; // The recording mode
-		}
+        public override void SetStaticDefaults()
+        {
+            ProjectileID.Sets.TrailCacheLength[Projectile.type] = 5; // The length of old position to be recorded
+            ProjectileID.Sets.TrailingMode[Projectile.type] = 0; // The recording mode
+        }
         public override void SetDefaults()
         {
             Projectile.width = 59;
@@ -34,18 +35,24 @@ namespace DeletedBlight.Projectiles.Magic
         public override void AI()
         {
             FangsOpen++; // A timer to determine when certain things should happen
-            if (FangsOpen < 20) {
+            if (FangsOpen < 20)
+            {
                 FangsClose = false; // Projectile can't do damage yet
                 Projectile.velocity.Y *= 0.9f; // Go in one direction and decelerate
-            } else if (FangsOpen == 20 && !FangsClose) {
+            }
+            else if (FangsOpen == 20 && !FangsClose)
+            {
                 FangsClose = true; // Turning on FangsClose makes the projectile able to do damage
                 Projectile.velocity.Y *= -1f; // Reverse direction
-            } else {
+            }
+            else
+            {
                 Projectile.velocity.Y *= 1.12f; // Slam down in the other direction!
             }
 
-            if (Projectile.Colliding(Projectile.Hitbox, Main.player[Projectile.owner].Hitbox)){ // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
-                
+            if (Projectile.Colliding(Projectile.Hitbox, Main.player[Projectile.owner].Hitbox))
+            { // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
+
                 // Send a chat message to the game
                 Main.NewText("JawBottom hit!", Color.Yellow);
                 Projectile.Kill(); // If the projectile hits the player, kill it immediately to prevent it from hitting multiple times

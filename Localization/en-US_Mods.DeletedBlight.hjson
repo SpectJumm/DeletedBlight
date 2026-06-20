@@ -11,10 +11,10 @@ Projectiles: {
 	CoconutGunProjectile.DisplayName: Exploding Coconut
 	BattleCatProj.DisplayName: Battle Cat
 	AcidVomit.DisplayName: Acid Vomit
-	EngineersMegaphoneProjectile.DisplayName: Engineers Megaphone Projectile
+	EngineersMegaphoneProjectile.DisplayName: Engineer's Megaphone
 	JawTop.DisplayName: Jaw Top
 	JawBottom.DisplayName: Jaw Bottom
-	ShadowflameApparitionFriendly.DisplayName: Shadowflame Apparition Friendly
+	ShadowflameApparitionFriendly.DisplayName: Shadowflame Apparition
 	SlimeballProjectile.DisplayName: Slimeball Projectile
 	TrapperTapperFlail.DisplayName: Trapper Tapper Flail
 }
@@ -85,9 +85,12 @@ Items: {
 	}
 
 	HornofPlenty: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Gives 70 seconds of Potion Sickness instead of 60
+			Not Consumable
+			'''
 		DisplayName: Horn of Plenty
-		RestoreLifeText: Mods.DeletedBlight.Items.HornofPlenty.RestoreLifeText
 	}
 
 	AcceleratingArrow: {
@@ -144,7 +147,7 @@ Items: {
 	}
 
 	VesselsFangs: {
-		DisplayName: Vessels Fangs
+		DisplayName: Vessel's Fangs
 		Tooltip: ""
 	}
 

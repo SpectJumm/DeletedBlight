@@ -1,9 +1,9 @@
-    using Terraria;
-    using Terraria.ID;
-    using Terraria.ModLoader;
-    using Terraria.GameContent.ItemDropRules;
-    using DeletedBlight.Projectiles.Melee;
-    
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.GameContent.ItemDropRules;
+using DeletedBlight.Projectiles.Melee;
+
 namespace DeletedBlight.Items.Weapons.Melee
 {
     public class ToothofCthulhu : ModItem
@@ -28,7 +28,7 @@ namespace DeletedBlight.Items.Weapons.Melee
             Item.autoReuse = true;
         }
     }
-        
+
     public class EyeofCthulhuDrops : GlobalNPC
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)

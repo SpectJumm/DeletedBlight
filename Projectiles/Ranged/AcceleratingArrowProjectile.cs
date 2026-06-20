@@ -10,7 +10,7 @@ namespace DeletedBlight.Projectiles.Ranged
     {
         public override void SetStaticDefaults()
         {
-            
+
         }
 
         public override void SetDefaults()
@@ -37,15 +37,16 @@ namespace DeletedBlight.Projectiles.Ranged
         {
             target.AddBuff(BuffID.Electrified, 300); // Apply Electrified debuff for 5 seconds
         }
-		public override void OnKill(int timeLeft) {
-			SoundEngine.PlaySound(SoundID.Dig, Projectile.position); // Plays the basic sound most projectiles make when hitting blocks.
-			for (int i = 0; i < 5; i++) // Creates a splash of dust around the position the projectile dies.
-			{
-				Dust dust = Dust.NewDustDirect(Projectile.position, Projectile.width, Projectile.height, DustID.Silver);
-				dust.noGravity = true;
-				dust.velocity *= 1.5f;
-				dust.scale *= 0.9f;
-			}
+        public override void OnKill(int timeLeft)
+        {
+            SoundEngine.PlaySound(SoundID.Dig, Projectile.position); // Plays the basic sound most projectiles make when hitting blocks.
+            for (int i = 0; i < 5; i++) // Creates a splash of dust around the position the projectile dies.
+            {
+                Dust dust = Dust.NewDustDirect(Projectile.position, Projectile.width, Projectile.height, DustID.Silver);
+                dust.noGravity = true;
+                dust.velocity *= 1.5f;
+                dust.scale *= 0.9f;
+            }
             if (Projectile.damage > 100)
             {
                 Projectile.damage = 100; // Cap the damage at 100

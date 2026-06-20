@@ -15,10 +15,10 @@ namespace DeletedBlight.Items.Weapons.Ranged
             Item.DamageType = DamageClass.Ranged;
             Item.width = 42;
             Item.height = 36;
-			Item.useAnimation = 24;
-			Item.useTime = 8; // one third of useAnimation
-			Item.reuseDelay = 30;
-			Item.consumeAmmoOnLastShotOnly = true;
+            Item.useAnimation = 24;
+            Item.useTime = 8; // one third of useAnimation
+            Item.reuseDelay = 30;
+            Item.consumeAmmoOnLastShotOnly = true;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
             Item.knockBack = 4;
@@ -29,10 +29,11 @@ namespace DeletedBlight.Items.Weapons.Ranged
             Item.shoot = ModContent.ProjectileType<CoconutGunProjectile>();
             Item.shootSpeed = 10f;
         }
-		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback) {
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(4));
+        public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
+        {
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(4));
         }
-    
+
         public override void AddRecipes()
         {
             CreateRecipe()

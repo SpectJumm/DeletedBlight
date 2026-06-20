@@ -49,9 +49,10 @@ namespace DeletedBlight.Projectiles.Magic
             {
                 Projectile.velocity.Y *= 1.12f; // Slam down in the other direction!
             }
-        
-                if (Projectile.Colliding(Projectile.Hitbox, Main.player[Projectile.owner].Hitbox)){ // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
-                
+
+            if (Projectile.Colliding(Projectile.Hitbox, Main.player[Projectile.owner].Hitbox))
+            { // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
+
                 // Send a chat message to the game
                 Main.NewText("JawBottom hit!", Color.Yellow);
                 Projectile.Kill(); // If the projectile hits the player, kill it immediately to prevent it from hitting multiple times

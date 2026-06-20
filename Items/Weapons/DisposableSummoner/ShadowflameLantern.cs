@@ -7,9 +7,9 @@ using DeletedBlight.Projectiles.Summons;
 namespace DeletedBlight.Items.Weapons.DisposableSummoner
 {
 
-// Since this is the first of these "disposable summoner" items, I should explain what they are.
-// Basically, the minions summoned with these will suicide-bomb the target or be used up in some way, requiring continuous reuse of the item.
-// They'd do summon tag damage too, making them an alternative to whips.
+    // Since this is the first of these "disposable summoner" items, I should explain what they are.
+    // Basically, the minions summoned with these will suicide-bomb the target or be used up in some way, requiring continuous reuse of the item.
+    // They'd do summon tag damage too, making them an alternative to whips.
 
     public class ShadowflameLantern : ModItem
     {
@@ -34,6 +34,6 @@ namespace DeletedBlight.Items.Weapons.DisposableSummoner
                 Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center, Vector2.Zero, ModContent.ProjectileType<ShadowflameApparitionFriendly>(), 0, 0f, player.whoAmI);
             }
             return true;
-        }    
+        }
     }
 }

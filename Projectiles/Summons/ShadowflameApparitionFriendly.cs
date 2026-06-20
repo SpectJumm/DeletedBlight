@@ -59,7 +59,7 @@ namespace DeletedBlight.Projectiles.Summons
             // GeneralBehavior(owner, out Vector2 vectorToIdlePosition, out float distanceToIdlePosition);
             SearchForTargets(owner, out bool foundTarget, out float distanceFromTarget, out Vector2 targetCenter);
             //Movement(foundTarget, distanceFromTarget, targetCenter, distanceToIdlePosition, vectorToIdlePosition);
-			//Visuals();
+            //Visuals();
         }
 
         // This is the "active check", makes sure the minion is alive while the player is alive, and despawns if not

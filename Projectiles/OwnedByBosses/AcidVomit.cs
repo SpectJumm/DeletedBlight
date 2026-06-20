@@ -34,13 +34,13 @@ public class AcidVomit : ModProjectile
         return true;
     }
 
-    
 
 
 
-    
 
-        
+
+
+
     public override void AI()
     {
         Projectile.velocity.Y *= 1.02f;

@@ -8,9 +8,10 @@ namespace DeletedBlight.Projectiles.Magic
 {
     public class SnowgraveIce : ModProjectile
     {
-		public override void SetStaticDefaults() {
-			Main.projFrames[Type] = 4;
-		}
+        public override void SetStaticDefaults()
+        {
+            Main.projFrames[Type] = 4;
+        }
         /*public override bool PreDraw(ref Color lightColor)
         {
             var sourceRectangle = new Rectangle(-13, 54 * Projectile.frame, 288, 56);
@@ -20,7 +21,7 @@ namespace DeletedBlight.Projectiles.Magic
 
         public override void SetDefaults()
         {
-            
+
             Projectile.width = 288;
             Projectile.height = 54;
             Projectile.friendly = true;
@@ -36,12 +37,13 @@ namespace DeletedBlight.Projectiles.Magic
         }
         public override void AI()
         {
-			Projectile.frameCounter += 1;
-			if (Projectile.frameCounter >= 4) {
-				Projectile.frameCounter = 0;
-				Projectile.frame = ++Projectile.frame % Main.projFrames[Type];
-			}
-        Projectile.velocity.Y = -15f; // Make it negative to go up
+            Projectile.frameCounter += 1;
+            if (Projectile.frameCounter >= 4)
+            {
+                Projectile.frameCounter = 0;
+                Projectile.frame = ++Projectile.frame % Main.projFrames[Type];
+            }
+            Projectile.velocity.Y = -15f; // Make it negative to go up
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -56,5 +58,5 @@ namespace DeletedBlight.Projectiles.Magic
                 dust.velocity *= 2f;
             }
         }
-    }	
+    }
 }
