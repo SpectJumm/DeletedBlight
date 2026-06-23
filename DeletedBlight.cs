@@ -41,7 +41,8 @@ namespace DeletedBlight
                 // Commenting this code out because I'm too stupid to make it work. ;-;
                 GameShaders.Armor.BindShader(ModContent.ItemType<TestDye>(), new ArmorShaderData(chromaticAberration, "ChromaticAberration"));
                 Asset<Effect> anotherDye = Assets.Request<Effect>("Assets/AutoloadedEffects/Shaders/Dyes/AnotherDye");
-                GameShaders.Armor.BindShader(ModContent.ItemType<BSDye>(), new ArmorShaderData(anotherDye, "SomeBullshit").UseImage(Assets.Request<Texture2D>("Assets/Textures/Noise/CrackedNoise")));
+                GameShaders.Armor.BindShader(ModContent.ItemType<BSDye>(), new ArmorShaderData(anotherDye, "SomeBullshit"));
+                // Reminder to self: you don't need to do a .UseImage() if it's just gonna be a dye because you can assign the image in the dye code.
 
 
             }

@@ -21,7 +21,7 @@ namespace DeletedBlight.Items.Dyes
                 GameShaders.Armor.BindShader(
                     Item.type,
                     new ArmorShaderData(Mod.Assets.Request<Effect>("Assets/AutoloadedEffects/Shaders/Dyes/AnotherDye"), "SomeBullshit")
-                    .UseImage(Mod.Assets.Request<Texture2D>("Assets/Textures/Noise/CrackedNoise"))
+                    .UseImage(Mod.Assets.Request<Texture2D>("Assets/Textures/Noise/FieryNoise"))
                 );
             }
         }

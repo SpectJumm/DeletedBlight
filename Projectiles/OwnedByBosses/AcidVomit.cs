@@ -30,7 +30,7 @@ public class AcidVomit : ModProjectile
         var customEffect = ModContent.Request<Texture2D>("DeletedBlight/Assets/Textures/Noise/AcidNoise").Value;
         Main.spriteBatch.End(out var snapshot);
         Main.instance.GraphicsDevice.Textures[1] = customEffect;
-        Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
+        Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);
         return true;
     }
 

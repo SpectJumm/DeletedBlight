@@ -19,7 +19,8 @@ float2 uLegacyArmorSheetSize;
 float4 main(float4 sampleColor : COLOR0, float2 coords : TEXCOORD0) : COLOR
 {
     float4 color = tex2D(uImage0, coords); // Sample the base texture
-    float2 noiseCoords = coords + float2(uTime * 0.1, uTime * 0.1); // Create animated noise coordinates
+    color.rgb *= float3(1.0, 0.2, 0.0); // Fire color
+    float2 noiseCoords = coords + float2(uTime * 0.5, uTime * 0.5); // Create animated noise coordinates
     float4 noise = tex2D(uImage1, noiseCoords); // Sample the noise
 
     return color * noise * sampleColor; // Modulate the sampled color with the input color

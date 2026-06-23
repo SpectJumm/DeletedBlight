@@ -27,6 +27,7 @@ NPCs: {
 	AyakaDaiakumaBodyAlt.DisplayName: Ayaka Daiakuma
 	AyakaDaiakumaBody.DisplayName: Ayaka Daiakuma
 	ArmoredSnake.DisplayName: Armored Snake
+	TestBoss.DisplayName: Test Boss
 }
 
 Items: {
