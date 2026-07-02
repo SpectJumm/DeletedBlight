@@ -43,6 +43,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             directionToTarget.Normalize();
             Vector2 desiredPosition = targetPlayer.Center + new Vector2 (400f, 0f).RotatedBy(MathHelper.ToRadians(NPC.ai[0]*2.4f));
             NPC.Center = Vector2.Lerp(NPC.Center, desiredPosition, 0.5f);
+            NPC.rotation = directionToTarget.ToRotation() + MathHelper.PiOver2; // Rotate the boss to face the player
             
             if (NPC.ai[0] % 45 == 0) // Every 45 ticks (0.75 seconds), shoot a projectile at the player
             {
