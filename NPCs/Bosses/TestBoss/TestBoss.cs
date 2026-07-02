@@ -34,18 +34,21 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             NPC.noTileCollide = true;
         }
 
-        public override void AI() // For this first attack that I program, the boss will orbit around the player
+        public override void AI() // Making a few functions that have different attacks in them
         {
+            TurkeyTurnabout();
+        }
+        private void TurkeyTurnabout() {
             NPC.TargetClosest();
-            NPC.ai[0]++;
+            NPC.ai[1]++;
             Player targetPlayer = Main.player[NPC.target]; // useful variable
             Vector2 directionToTarget = targetPlayer.Center - NPC.Center;
             directionToTarget.Normalize();
-            Vector2 desiredPosition = targetPlayer.Center + new Vector2 (400f, 0f).RotatedBy(MathHelper.ToRadians(NPC.ai[0]*2.4f));
+            Vector2 desiredPosition = targetPlayer.Center + new Vector2 (450f, 0f).RotatedBy(MathHelper.ToRadians(NPC.ai[1]*2.4f));
             NPC.Center = Vector2.Lerp(NPC.Center, desiredPosition, 0.5f);
-            NPC.rotation = directionToTarget.ToRotation() + MathHelper.PiOver2; // Rotate the boss to face the player
+            NPC.rotation = directionToTarget.ToRotation() - MathHelper.PiOver2; // Rotate the boss to face the player
             
-            if (NPC.ai[0] % 45 == 0) // Every 45 ticks (0.75 seconds), shoot a projectile at the player
+            if (NPC.ai[1] % 45 == 0) // Every 45 ticks (0.75 seconds), shoot a projectile at the player
             {
                 Vector2 shootDirection = directionToTarget * 10f; // Adjust the speed of the projectile
                 Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, shootDirection, ProjectileID.EyeLaser, 20, 1f, Main.myPlayer);

@@ -54,7 +54,7 @@ namespace DeletedBlight.Projectiles.Magic
             { // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
 
                 // Send a chat message to the game
-                Main.NewText("JawBottom hit!", Color.Yellow);
+                Main.NewText("JawTop hit!", Color.Yellow);
                 Projectile.Kill(); // If the projectile hits the player, kill it immediately to prevent it from hitting multiple times
             }
         }
