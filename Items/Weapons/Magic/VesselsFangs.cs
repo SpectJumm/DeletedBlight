@@ -16,14 +16,13 @@ namespace DeletedBlight.Items.Weapons.Magic
             Item.width = 80;
             Item.height = 76;
             // TODO: Fix the hitbox/drawing offset in the JawTop and JawBottom projectiles
-            Item.scale = 0.25f;
             Item.useTime = 60;
             Item.useAnimation = 60;
             Item.damage = 356;
             Item.mana = 64;
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.shoot = ModContent.ProjectileType<BirchChip>(); // It legit does not matter what I shoot here
+            Item.shoot = ProjectileID.FireworkFountainRainbow; // Credit to AkiraPlayz for figuring out that this projectile essentially voids itself, thus it doesn't fire a random birch chip that does a ton of damage
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.rare = ModContent.RarityType<BlightGreen>();
         }

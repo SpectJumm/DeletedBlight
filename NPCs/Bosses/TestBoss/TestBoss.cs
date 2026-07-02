@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace DeletedBlight.NPCs.Bosses.TestBoss
 {
@@ -19,8 +20,8 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
         public override void SetDefaults()
         {
-            NPC.width = 100;
-            NPC.height = 100;
+            NPC.width = 200;
+            NPC.height = 200;
             NPC.damage = 50;
             NPC.defense = 20;
             NPC.lifeMax = 5000;
@@ -30,13 +31,25 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             NPC.boss = true;
             NPC.knockBackResist = 0f;
             NPC.aiStyle = -1; // Custom AI
+            NPC.noTileCollide = true;
         }
 
         public override void AI() // For this first attack that I program, the boss will orbit around the player
         {
-            Vector2 desiredPosition = Main.player[NPC.target].Center + new Vector2(200f, 0f).RotatedBy(MathHelper.ToRadians(NPC.ai[0]));
-            NPC.Center = desiredPosition;
+            NPC.TargetClosest();
+            NPC.ai[0]++;
+            Player targetPlayer = Main.player[NPC.target]; // useful variable
+            Vector2 directionToTarget = targetPlayer.Center - NPC.Center;
+            directionToTarget.Normalize();
+            Vector2 desiredPosition = targetPlayer.Center + new Vector2 (400f, 0f).RotatedBy(MathHelper.ToRadians(NPC.ai[0]*2.4f));
+            NPC.Center = Vector2.Lerp(NPC.Center, desiredPosition, 0.5f);
             
+            if (NPC.ai[0] % 45 == 0) // Every 45 ticks (0.75 seconds), shoot a projectile at the player
+            {
+                Vector2 shootDirection = directionToTarget * 10f; // Adjust the speed of the projectile
+                Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, shootDirection, ProjectileID.EyeLaser, 20, 1f, Main.myPlayer);
+                SoundEngine.PlaySound(SoundID.Item12, NPC.position); // Play a shooting sound
+            }
         }
 
         public override void OnKill()
