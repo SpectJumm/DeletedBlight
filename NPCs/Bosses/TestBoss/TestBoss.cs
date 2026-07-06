@@ -57,15 +57,12 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             {
                 case 0:
                     DemonicAssault();
-                    Main.NewText(CurrentAttack);
                     break;
                 case 1:
                     LeapOfFaith();
-                    Main.NewText(CurrentAttack);
                     break;
                 case 2:
                     TurkeyTurnabout();
-                    Main.NewText(CurrentAttack);
                     break;
             }
 
