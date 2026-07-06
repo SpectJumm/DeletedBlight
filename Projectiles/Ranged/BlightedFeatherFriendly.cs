@@ -13,7 +13,7 @@ namespace DeletedBlight.Projectiles.Ranged
 
 
         // Store the target NPC using Projectile.ai[0]
-        private NPC HomingTarget
+        private NPC? HomingTarget
         {
             get => Projectile.ai[0] == 0 ? null : Main.npc[(int)Projectile.ai[0] - 1];
             set

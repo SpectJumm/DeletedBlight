@@ -10,7 +10,7 @@ namespace DeletedBlight.Items.Weapons.Melee
     {
         public override void SetDefaults()
         {
-            Item.damage = 26;
+            Item.damage = 22;
             Item.DamageType = DamageClass.Melee;
             Item.width = 15;
             Item.height = 35;

@@ -19,7 +19,7 @@ namespace DeletedBlight.Projectiles.Magic
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0; // The recording mode
         }
         public override void SetDefaults()
-        {
+        {   // Damage is defined by the Vessel's Fangs weapon
             Projectile.width = 59;
             Projectile.height = 32;
             Projectile.scale = 2f;
@@ -50,11 +50,9 @@ namespace DeletedBlight.Projectiles.Magic
                 Projectile.velocity.Y *= 1.12f; // Slam down in the other direction!
             }
 
-            if (Projectile.Colliding(Projectile.Hitbox, Main.player[Projectile.owner].Hitbox))
+            if (FangsOpen > 46)
             { // If the bottom jaw hits the top jaw, kill it immediately to prevent it from hitting multiple times
 
-                // Send a chat message to the game
-                Main.NewText("JawTop hit!", Color.Yellow);
                 Projectile.Kill(); // If the projectile hits the player, kill it immediately to prevent it from hitting multiple times
             }
         }

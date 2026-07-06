@@ -9,7 +9,7 @@
       "DeletedBlight/1.0.0": {
         "dependencies": {
           "Krafs.Publicizer": "2.3.0",
-          "tModLoader": "2026.4.3",
+          "tModLoader": "2026.5.3",
           "Daybreak": "1.0.0.0"
         },
         "runtime": {
@@ -17,7 +17,7 @@
         }
       },
       "Krafs.Publicizer/2.3.0": {},
-      "tModLoader/2026.4.3": {},
+      "tModLoader/2026.5.3": {},
       "Daybreak/1.0.0.0": {
         "runtime": {
           "Daybreak.dll": {
@@ -41,12 +41,12 @@
       "path": "krafs.publicizer/2.3.0",
       "hashPath": "krafs.publicizer.2.3.0.nupkg.sha512"
     },
-    "tModLoader/2026.4.3": {
+    "tModLoader/2026.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eKovg8wmI5DH/2EUqj6gsuT/NXPhB4putV4CI5mwT0NT8HZhEZZznl10fjEeJE3YCIxmPijAwWGzyi7rMLcs1g==",
-      "path": "tmodloader/2026.4.3",
-      "hashPath": "tmodloader.2026.4.3.nupkg.sha512"
+      "sha512": "sha512-S47kmA8D5+ahRl27fdxuKc7JbFgII3t5Ul5yYuFz6OLl1z2RkVB6A64RRZdkBTnBFsYf07EscNY2nAN4M4lEKQ==",
+      "path": "tmodloader/2026.5.3",
+      "hashPath": "tmodloader.2026.5.3.nupkg.sha512"
     },
     "Daybreak/1.0.0.0": {
       "type": "reference",
