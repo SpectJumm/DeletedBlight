@@ -13,7 +13,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
     public class TestBoss : ModNPC
     {
 
-        public ref float AttackCounter => ref NPC.ai[0]; // What attack is being used
+        public ref float CurrentAttack => ref NPC.ai[0]; // What attack is being used
 
         public ref float AttackTimer => ref NPC.ai[1]; // How long any attack has been going on for
 
@@ -53,22 +53,25 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
         {
             NPC.TargetClosest();
 
-            switch ((int)AttackCounter)
+            switch ((int)CurrentAttack)
             {
                 case 0:
                     DemonicAssault();
+                    Main.NewText(CurrentAttack);
                     break;
                 case 1:
                     LeapOfFaith();
+                    Main.NewText(CurrentAttack);
                     break;
                 case 2:
                     TurkeyTurnabout();
+                    Main.NewText(CurrentAttack);
                     break;
             }
 
-            if (AttackCounter >= 3) // Since I only have 3 attacks for now, reset the counter to loop
+            if (CurrentAttack >= 3) // Since I only have 3 attacks for now, reset the counter to loop
             {
-                AttackCounter = 0;
+                CurrentAttack = 0;
             }
         }
 
@@ -92,13 +95,13 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
             if (dashBrace)
             {
-                NPC.velocity *= 0.9f;
                 for (int loops = 0; loops < 2; loops++)
                 {
                     for (int i = 0; i < 50; i++)
                     {
                         if (AttackTimer2 <= 10) // Dust stops during charge
                         {
+                            NPC.velocity *= 0.9f;
                             Vector2 speed = Main.rand.NextVector2CircularEdge(1f, 1f);
                             Dust d = Dust.NewDustPerfect(NPC.Center, DustID.PurpleCrystalShard, speed * 10 * (loops + 1), Scale: 1.5f);
                             d.noGravity = true;
@@ -110,7 +113,6 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
             if (AttackTimer2 == 30) // After 30 ticks of bracing, dash towards the player
             {
-                AttackNumber += 1; // New dash counter
                 NPC.velocity = directionToTarget * 30f; // Adjust the speed of the dash
                 NPC.rotation = directionToTarget.ToRotation() - MathHelper.PiOver2; // Rotate the boss to face the player
                 SoundEngine.PlaySound(SoundID.Roar, NPC.position); // Play a roar sound when dashing
@@ -125,11 +127,11 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             {
                 AttackTimer = 0;
                 AttackTimer2 = 0;
+                AttackNumber += 1; // New dash counter
             }
             if (AttackNumber >= 5)
             {
-                AttackCounter += 1; // Add time to switch manually
-                AttackCounter = 0;
+                NextAttack();
             }
         }
 
@@ -150,7 +152,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
                 Vector2 directionToTarget = targetPlayer.Center - NPC.Center;
                 directionToTarget.Normalize();
                 CanAttack = false; // Prevent the boss from hitting cheapshots
-                Vector2 desiredPosition = targetPlayer.Center + new Vector2(0f, -600f); // Position above the player
+                Vector2 desiredPosition = targetPlayer.Center + new Vector2(0f, -630f); // Position above the player
                 NPC.Center = Vector2.Lerp(NPC.Center, desiredPosition, 0.07f); // Move towards the desired position
                 NPC.rotation = directionToTarget.ToRotation() - MathHelper.PiOver2; // Rotate the boss to face the player
             }
@@ -182,8 +184,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
                 if (AttackNumber >= 5) // After 5 slams, move to the next attack
                 {
-                    AttackCounter += 1;
-                    AttackNumber = 0;
+                    NextAttack();
                 }
             }
         }
@@ -206,9 +207,17 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
             if (AttackTimer >= 450) // Reset the timer after 7 seconds
             {
-                AttackTimer = 0;
-                AttackCounter += 1; // Move to the next attack
+                NextAttack();
             }
+        }
+
+
+        private void NextAttack()
+        {
+            CurrentAttack += 1;
+            AttackTimer = 0;
+            AttackTimer2 = 0;
+            AttackNumber = 0;
         }
 
         public override void OnKill()
