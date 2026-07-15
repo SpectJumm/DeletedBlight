@@ -8,7 +8,7 @@ using Terraria.UI.Chat;
 using Daybreak.Common.Features.Rarities;
 using Daybreak.Common.Rendering;
 
-namespace DeletedBlight.Rarities
+namespace ShadowlightMod.Rarities
 
 // Disclaimer: I never could've done ANY of this without help from the Nightshade Discord. Support them and their projects.
 
@@ -21,7 +21,7 @@ namespace DeletedBlight.Rarities
         {
             Matrix originalMatrix = drawContext.Ui ? Main.UIScaleMatrix : Main.GameViewMatrix.TransformationMatrix;
             sb.End(out var snapshot);
-            var customEffect = ModContent.Request<Effect>("DeletedBlight/Assets/AutoloadedEffects/Shaders/OverlayModifiers/ChromaticAberration");
+            var customEffect = ModContent.Request<Effect>("ShadowlightMod/Assets/AutoloadedEffects/Shaders/OverlayModifiers/ChromaticAberration");
             sb.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, customEffect.Value, originalMatrix);
             ChatManager.DrawColorCodedStringWithShadow(sb, font, text, position, color, rotation, origin, scale, maxWidth, spread);
             sb.End();

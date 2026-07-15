@@ -3,8 +3,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using DeletedBlight.Projectiles.Summons;
-namespace DeletedBlight.Items.Weapons.DisposableSummoner
+using ShadowlightMod.Projectiles.Summons;
+namespace ShadowlightMod.Items.Weapons.DisposableSummoner
 {
 
     // Since this is the first of these "disposable summoner" items, I should explain what they are.

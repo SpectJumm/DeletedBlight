@@ -10,15 +10,15 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using ReLogic.Content;
 using Terraria;
-using DeletedBlight.Rarities;
-using DeletedBlight.Sounds;
-using DeletedBlight.Items.Dyes;
-using DeletedBlight.Assets;
+using ShadowlightMod.Rarities;
+using ShadowlightMod.Sounds;
+using ShadowlightMod.Items.Dyes;
+using ShadowlightMod.Assets;
 
-namespace DeletedBlight
+namespace ShadowlightMod
 {
     // Please read https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Modding-Guide#mod-skeleton-contents for more information about the various files in a mod.
-    public class DeletedBlight : Mod
+    public class ShadowlightMod : Mod
     {
         public override void Load()
         {

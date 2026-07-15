@@ -1,3 +1,3 @@
-namespace DeletedBlight.Assets;
+namespace ShadowlightMod.Assets;
 
 // lazy namespace declaration

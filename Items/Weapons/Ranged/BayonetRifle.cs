@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Ranged
+namespace ShadowlightMod.Items.Weapons.Ranged
 {
     public class BayonetRifle : ModItem
     {

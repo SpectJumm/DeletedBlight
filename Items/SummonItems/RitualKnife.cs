@@ -2,15 +2,15 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.NPCs.Bosses.AyakaDaiakuma;
-using DeletedBlight.Rarities;
+using ShadowlightMod.NPCs.Bosses.AyakaDaiakuma;
+using ShadowlightMod.Rarities;
 
-namespace DeletedBlight.Items.SummonItems
+namespace ShadowlightMod.Items.SummonItems
 {
     public class RitualKnife : ModItem
     {
 
-        public static readonly SoundStyle UseSound = new SoundStyle("DeletedBlight/Sounds/SummonItems/AyakaSummon")
+        public static readonly SoundStyle UseSound = new SoundStyle("ShadowlightMod/Sounds/SummonItems/AyakaSummon")
         {
             Volume = 0.7f,
             PitchVariance = 0f,

@@ -7,7 +7,7 @@ using Terraria.Audio;
 using System;
 
 
-namespace DeletedBlight.NPCs.Enemies
+namespace ShadowlightMod.NPCs.Enemies
 {
     public class ArmoredSnake : ModNPC
     {

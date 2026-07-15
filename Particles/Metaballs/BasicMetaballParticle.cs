@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace DeletedBlight.Particles.Metaballs;
+namespace ShadowlightMod.Particles.Metaballs;
 
 public class BasicMetaballParticle
 {

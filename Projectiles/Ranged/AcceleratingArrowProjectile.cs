@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using Microsoft.Xna.Framework;
 
-namespace DeletedBlight.Projectiles.Ranged
+namespace ShadowlightMod.Projectiles.Ranged
 {
     public class AcceleratingArrowProjectile : ModProjectile
     {

@@ -1,3 +1,3 @@
-namespace DeletedBlight.Items.Weapons.Summoner;
+namespace ShadowlightMod.Items.Weapons.Summoner;
 
 // Lazy namespace delcaration

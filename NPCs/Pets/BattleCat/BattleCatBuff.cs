@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.NPCs.Pets.BattleCat
+namespace ShadowlightMod.NPCs.Pets.BattleCat
 {
     public class BattleCatBuff : ModBuff
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using DeletedBlight.Buffs;
-using DeletedBlight.Items;
-using DeletedBlight.Projectiles;
+using ShadowlightMod.Buffs;
+using ShadowlightMod.Items;
+using ShadowlightMod.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -22,7 +22,7 @@ using Terraria.WorldBuilding;
 using static Terraria.Main;
 using static Terraria.ModLoader.ModContent;
 
-namespace DeletedBlight.BlightPlayer
+namespace ShadowlightMod.BlightPlayer
 {
 
 }

@@ -29,7 +29,7 @@ NPCs: {
 	AyakaDaiakumaBody.DisplayName: Ayaka Daiakuma
 	ArmoredSnake.DisplayName: Armored Snake
 	TestBoss.DisplayName: Test Boss
-	DeletedBlight.DisplayName: Deleted Blight
+	ShadowlightMod.DisplayName: Deleted Blight
 }
 
 Items: {
@@ -183,7 +183,7 @@ Buffs: {
 
 	BayonetStabbed: {
 		DisplayName: Bayonet Stabbed
-		Description: Mods.DeletedBlight.Buffs.BayonetStabbed.Description
+		Description: Mods.ShadowlightMod.Buffs.BayonetStabbed.Description
 	}
 
 	BattleCatBuff: {

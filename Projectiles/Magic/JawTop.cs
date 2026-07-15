@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace DeletedBlight.Projectiles.Magic
+namespace ShadowlightMod.Projectiles.Magic
 {
     public class JawTop : ModProjectile
     {

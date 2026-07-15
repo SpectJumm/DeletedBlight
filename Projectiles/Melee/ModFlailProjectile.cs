@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 // Treat this as deprecated content.
 
 
-namespace DeletedBlight.Projectiles.Melee
+namespace ShadowlightMod.Projectiles.Melee
 {
     public abstract class ModFlailProjectile : ModProjectile
     {

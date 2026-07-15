@@ -4,7 +4,7 @@ using Terraria.ID;
 using Microsoft.Xna.Framework;
 using Terraria.GameContent.RGB;
 
-namespace DeletedBlight.NPCs.Bosses.AyakaDaiakuma
+namespace ShadowlightMod.NPCs.Bosses.AyakaDaiakuma
 {
     [AutoloadBossHead]
     public class AyakaDaiakumaHead : ModNPC

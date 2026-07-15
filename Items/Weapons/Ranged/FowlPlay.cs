@@ -3,10 +3,10 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
-using DeletedBlight.Projectiles.Ranged;
-using DeletedBlight.Rarities;
+using ShadowlightMod.Projectiles.Ranged;
+using ShadowlightMod.Rarities;
 
-namespace DeletedBlight.Items.Weapons.Ranged
+namespace ShadowlightMod.Items.Weapons.Ranged
 {
     public class FowlPlay : ModItem
     {

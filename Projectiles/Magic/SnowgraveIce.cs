@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Projectiles.Magic
+namespace ShadowlightMod.Projectiles.Magic
 {
     public class SnowgraveIce : ModProjectile
     {

@@ -1,14 +1,14 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.NPCs.Bosses.DeletedBlight;
+using ShadowlightMod.NPCs.Bosses.DeletedBlight;
 using Terraria.Audio;
-namespace DeletedBlight.Items.SummonItems
+namespace ShadowlightMod.Items.SummonItems
 {
     
 	public class AmalgamatedSkull : ModItem
 	{
-        public static readonly SoundStyle UseSound = new SoundStyle("DeletedBlight/Sounds/SummonItems/DeletedBlightSummon");
+        public static readonly SoundStyle UseSound = new SoundStyle("ShadowlightMod/Sounds/SummonItems/ShadowlightModSummon");
 
 		public override void SetDefaults()
 		{

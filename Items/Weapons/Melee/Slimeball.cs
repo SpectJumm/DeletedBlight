@@ -2,11 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System;
-using DeletedBlight.Projectiles.Melee;
+using ShadowlightMod.Projectiles.Melee;
 using Terraria.GameContent.ItemDropRules;
 
 
-namespace DeletedBlight.Items.Weapons.Melee
+namespace ShadowlightMod.Items.Weapons.Melee
 {
     public class Slimeball : ModItem
     {

@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace DeletedBlight.Projectiles.Ranged
+namespace ShadowlightMod.Projectiles.Ranged
 {
     public class VileBulletProjectile : ModProjectile
     {

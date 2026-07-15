@@ -1,3 +1,3 @@
-namespace DeletedBlight.Assets.Textures;
+namespace ShadowlightMod.Assets.Textures;
 
 // Lazy namespace declaration.

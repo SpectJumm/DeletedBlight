@@ -2,9 +2,9 @@ using Terraria;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.Magic;
+using ShadowlightMod.Projectiles.Magic;
 
-namespace DeletedBlight.Items.Weapons.Magic
+namespace ShadowlightMod.Items.Weapons.Magic
 {
     public class TrolleyProblem : ModItem
     {

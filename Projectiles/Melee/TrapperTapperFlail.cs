@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Projectiles.Melee
+namespace ShadowlightMod.Projectiles.Melee
 {
     public class TrapperTapperFlail : ModFlailProjectile
     {

@@ -1,4 +1,4 @@
-namespace DeletedBlight.Textures.UI;
+namespace ShadowlightMod.Textures.UI;
 
 // Lazy class declaration
 // TODO: Replace stolen Calamity textures with new ones

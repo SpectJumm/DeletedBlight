@@ -1,4 +1,4 @@
-using DeletedBlight.Items.Weapons;
+using ShadowlightMod.Items.Weapons;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Projectiles.Summons
+namespace ShadowlightMod.Projectiles.Summons
 {
     public class BigFireflyBuff : ModBuff
     {

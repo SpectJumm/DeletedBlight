@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Melee
+namespace ShadowlightMod.Items.Weapons.Melee
 {
     public class ComicallyLargeMetalSword : ModItem
     {

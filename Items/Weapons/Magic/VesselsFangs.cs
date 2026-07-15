@@ -1,5 +1,5 @@
-using DeletedBlight.Projectiles.Magic;
-using DeletedBlight.Rarities;
+using ShadowlightMod.Projectiles.Magic;
+using ShadowlightMod.Rarities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Magic
+namespace ShadowlightMod.Items.Weapons.Magic
 {
     public class VesselsFangs : ModItem
     {

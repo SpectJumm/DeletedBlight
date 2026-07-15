@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terraria.Audio;
 
-namespace DeletedBlight.Projectiles.Ranged
+namespace ShadowlightMod.Projectiles.Ranged
 {
     public class CoconutGunProjectile : ModProjectile
     {

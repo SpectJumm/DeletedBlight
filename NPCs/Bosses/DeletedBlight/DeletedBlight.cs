@@ -5,10 +5,10 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
-using DeletedBlight.Projectiles.OwnedByBosses;
+using ShadowlightMod.Projectiles.OwnedByBosses;
 using Terraria.DataStructures;
 
-namespace DeletedBlight.NPCs.Bosses.DeletedBlight
+namespace ShadowlightMod.NPCs.Bosses.DeletedBlight
 {
     [AutoloadBossHead]
     public class DeletedBlight : ModNPC

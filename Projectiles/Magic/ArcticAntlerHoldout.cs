@@ -2,9 +2,9 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Items.Weapons.Magic;
+using ShadowlightMod.Items.Weapons.Magic;
 
-namespace DeletedBlight.Projectiles.Magic
+namespace ShadowlightMod.Projectiles.Magic
 {
     // The held projectile of the ExampleHeldProjectileWeapon item. This is where the custom logic of this weapon is implemented.
     // Also note that this projectile has a _Glow texture that will automatically be drawn over the regular texture.

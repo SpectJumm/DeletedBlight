@@ -1,9 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.Ranged;
+using ShadowlightMod.Projectiles.Ranged;
 
-namespace DeletedBlight.Items.Weapons.Ranged
+namespace ShadowlightMod.Items.Weapons.Ranged
 
 {
     public class EngineersMegaphone : ModItem

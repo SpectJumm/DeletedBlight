@@ -3,12 +3,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 
-namespace DeletedBlight.Projectiles.Ranged
+namespace ShadowlightMod.Projectiles.Ranged
 
 {
     public class EngineersMegaphoneProjectile : ModProjectile
     {
-        public static readonly SoundStyle CriticalStrike = new SoundStyle("DeletedBlight/Sounds/Items/MegaphoneBRAINZ")
+        public static readonly SoundStyle CriticalStrike = new SoundStyle("ShadowlightMod/Sounds/Items/MegaphoneBRAINZ")
         {
             Volume = 5.5f,
             PitchVariance = 0f,

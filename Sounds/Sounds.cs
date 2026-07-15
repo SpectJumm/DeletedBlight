@@ -1,2 +1,2 @@
-namespace DeletedBlight.Sounds;
+namespace ShadowlightMod.Sounds;
 

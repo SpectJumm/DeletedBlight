@@ -5,10 +5,10 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ReLogic.Content;
 using Terraria;
-using DeletedBlight.Assets.AutoloadedEffects.Shaders;
-using DeletedBlight.Assets.Textures.Noise;
+using ShadowlightMod.Assets.AutoloadedEffects.Shaders;
+using ShadowlightMod.Assets.Textures.Noise;
 
-namespace DeletedBlight.Items.Dyes
+namespace ShadowlightMod.Items.Dyes
 {
     public class TestDye : ModItem
     {

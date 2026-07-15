@@ -1,12 +1,12 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.OwnedByBosses;
+using ShadowlightMod.Projectiles.OwnedByBosses;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Daybreak.Common.Rendering;
 
-namespace DeletedBlight.Projectiles.OwnedByBosses;
+namespace ShadowlightMod.Projectiles.OwnedByBosses;
 
 public class AcidVomit : ModProjectile
 {
@@ -27,7 +27,7 @@ public class AcidVomit : ModProjectile
     }
     public override bool PreDraw(ref Color lightColor)
     {
-        var customEffect = ModContent.Request<Texture2D>("DeletedBlight/Assets/Textures/Noise/AcidNoise").Value;
+        var customEffect = ModContent.Request<Texture2D>("ShadowlightMod/Assets/Textures/Noise/AcidNoise").Value;
         Main.spriteBatch.End(out var snapshot);
         Main.instance.GraphicsDevice.Textures[1] = customEffect;
         Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied, SamplerState.LinearClamp, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.TransformationMatrix);

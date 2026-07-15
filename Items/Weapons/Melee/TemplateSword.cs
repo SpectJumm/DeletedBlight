@@ -2,14 +2,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Melee
+namespace ShadowlightMod.Items.Weapons.Melee
 {
     // This is a basic item template.
     // Please see tModLoader's ExampleMod for every other example:
     // https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
     public class TemplateSword : ModItem
     {
-        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.DeletedBlight.hjson' file.
+        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ShadowlightMod.hjson' file.
         public override void SetDefaults()
         {
             Item.damage = 99999;

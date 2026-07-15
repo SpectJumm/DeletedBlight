@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.NPCs.Pets.BattleCat
+namespace ShadowlightMod.NPCs.Pets.BattleCat
 {
     public class CatFood : ModItem
     {

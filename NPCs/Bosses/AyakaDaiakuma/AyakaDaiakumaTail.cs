@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
-namespace DeletedBlight.NPCs.Bosses.AyakaDaiakuma
+namespace ShadowlightMod.NPCs.Bosses.AyakaDaiakuma
 {
     public class AyakaDaiakumaTail : ModNPC
     {

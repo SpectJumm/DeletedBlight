@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
 
-namespace DeletedBlight.Projectiles.Summons
+namespace ShadowlightMod.Projectiles.Summons
 {
     public class ShadowflameApparitionFriendly : ModProjectile
     {

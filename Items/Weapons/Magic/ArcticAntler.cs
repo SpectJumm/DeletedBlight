@@ -3,10 +3,10 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.Magic;
+using ShadowlightMod.Projectiles.Magic;
 using Terraria.Audio;
 
-namespace DeletedBlight.Items.Weapons.Magic
+namespace ShadowlightMod.Items.Weapons.Magic
 {
     public class ArcticAntler : ModItem
     {
@@ -37,7 +37,7 @@ namespace DeletedBlight.Items.Weapons.Magic
             velocity = Vector2.Normalize(velocity) * HoldoutDistance;
 
             Projectile.NewProjectile(source, position, velocity, type, damage, knockback, Main.myPlayer);
-            SoundEngine.PlaySound(new SoundStyle("DeletedBlight/Sounds/Items/Snowgrave", SoundType.Sound), player.position);
+            SoundEngine.PlaySound(new SoundStyle("ShadowlightMod/Sounds/Items/Snowgrave", SoundType.Sound), player.position);
             return false;
 
         }

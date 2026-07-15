@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Buffs
+namespace ShadowlightMod.Buffs
 {
     public class BayonetStabbed : ModBuff
     {

@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terraria.Graphics.Effects;
 
-namespace DeletedBlight.Items
+namespace ShadowlightMod.Items
 {
     public class DebugStick : ModItem
     {

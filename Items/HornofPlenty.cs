@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items
+namespace ShadowlightMod.Items
 {
     public class HornofPlenty : ModItem // Gold named the sprite "Horn of Nasty" lol, the name must not be lost to the sands of time.
     {

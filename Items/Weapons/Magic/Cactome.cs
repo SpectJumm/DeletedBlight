@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Items.Weapons.Magic
+namespace ShadowlightMod.Items.Weapons.Magic
 {
     public class Cactome : ModItem
     {

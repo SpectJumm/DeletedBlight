@@ -1,9 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.Ranged;
+using ShadowlightMod.Projectiles.Ranged;
 
-namespace DeletedBlight.Items.Ammo
+namespace ShadowlightMod.Items.Ammo
 {
     public class AcceleratingArrow : ModItem
     {

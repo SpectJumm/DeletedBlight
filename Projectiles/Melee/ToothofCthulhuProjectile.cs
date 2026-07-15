@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
 
-namespace DeletedBlight.Projectiles.Melee
+namespace ShadowlightMod.Projectiles.Melee
 {
     public class ToothofCthulhuProjectile : ModProjectile
     {

@@ -1,3 +1,3 @@
-namespace DeletedBlight.Assets.AutoloadedEffects.Shaders;
+namespace ShadowlightMod.Assets.AutoloadedEffects.Shaders;
 
 // lazy namespace declaration

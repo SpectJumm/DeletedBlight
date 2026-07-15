@@ -1,2 +1,2 @@
-namespace DeletedBlight.Projectiles;
+namespace ShadowlightMod.Projectiles;
 // Lazy namespace declaration

@@ -5,7 +5,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Projectiles.OwnedByBosses
+namespace ShadowlightMod.Projectiles.OwnedByBosses
 {
     public class BlightedFeather : ModProjectile
     {

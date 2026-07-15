@@ -4,9 +4,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using DeletedBlight.Projectiles.Magic;
+using ShadowlightMod.Projectiles.Magic;
 
-namespace DeletedBlight.Projectiles.Magic
+namespace ShadowlightMod.Projectiles.Magic
 {
     public class JawBottom : ModProjectile
     {

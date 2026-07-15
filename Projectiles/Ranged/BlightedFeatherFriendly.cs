@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DeletedBlight.Projectiles.Ranged
+namespace ShadowlightMod.Projectiles.Ranged
 {
     public class BlightedFeatherFriendly : ModProjectile
     {

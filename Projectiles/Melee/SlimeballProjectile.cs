@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System;
 
-namespace DeletedBlight.Projectiles.Melee
+namespace ShadowlightMod.Projectiles.Melee
 {
     public class SlimeballProjectile : ModProjectile
     {

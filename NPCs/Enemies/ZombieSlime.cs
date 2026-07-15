@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace DeletedBlight.NPCs.Enemies
+namespace ShadowlightMod.NPCs.Enemies
 {
 
     public class ZombieSlime : ModNPC
