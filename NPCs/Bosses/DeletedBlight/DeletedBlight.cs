@@ -6,11 +6,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using DeletedBlight.Projectiles.OwnedByBosses;
+using Terraria.DataStructures;
 
-namespace DeletedBlight.NPCs.Bosses.TestBoss
+namespace DeletedBlight.NPCs.Bosses.DeletedBlight
 {
     [AutoloadBossHead]
-    public class TestBoss : ModNPC
+    public class DeletedBlight : ModNPC
     {
 
         public ref float CurrentAttack => ref NPC.ai[0]; // What attack is being used
@@ -29,6 +30,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
         }
 
         public static readonly SoundStyle GFBDeath = new SoundStyle("DeletedBlight/Sounds/NPCKilled/StoryofUndertale");
+        public static readonly SoundStyle GFBDeath2 = new SoundStyle("DeletedBlight/Sounds/NPCKilled/DeltaruneExplosion");
         public bool CanAttack = true; // Turns off at points to prevent cheapshots
         public override bool CanHitPlayer(Player target, ref int cooldownSlot) => CanAttack;
         public override void SetDefaults()
@@ -49,9 +51,18 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             NPC.noTileCollide = true;
         }
 
+        public override void OnSpawn(IEntitySource source)
+        {
+            if (Main.netMode == NetmodeID.Server)
+            {
+                NetMessage.SendData(MessageID.WorldData);
+            }
+            Main.NewText("________ has awoken!", Color.MediumPurple); // ooooooo the boss has no name that makes it creepy ooooooo
+        }
         public override void AI() // Making a few functions that have different attacks in them
         {
             NPC.TargetClosest();
+            Player targetPlayer = Main.player[NPC.target]; // useful variable
 
             switch ((int)CurrentAttack)
             {
@@ -70,6 +81,13 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
             {
                 CurrentAttack = 0;
             }
+            if (targetPlayer.dead)
+            {
+                NPC.velocity.Y -= 0.1f; // Fly up if the player is dead
+                NPC.EncourageDespawn(10); // Method to despawn when offscreen after x ticks
+                return;
+            }
+            
         }
 
         private void DemonicAssault()
@@ -110,7 +128,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
             if (AttackTimer2 == 30) // After 30 ticks of bracing, dash towards the player
             {
-                NPC.velocity = directionToTarget * 30f; // Adjust the speed of the dash
+                NPC.velocity = directionToTarget * 20f; // Adjust the speed of the dash
                 NPC.rotation = directionToTarget.ToRotation() - MathHelper.PiOver2; // Rotate the boss to face the player
                 SoundEngine.PlaySound(SoundID.Roar, NPC.position); // Play a roar sound when dashing
                 for (int i = 0; i < 8; i++)
@@ -219,10 +237,7 @@ namespace DeletedBlight.NPCs.Bosses.TestBoss
 
         public override void OnKill()
         {
-            if (Main.zenithWorld)
-            {
-                SoundEngine.PlaySound(GFBDeath, NPC.position);
-            }
+            Main.NewText("The Deleted Blight has been defeated!", Color.MediumPurple);
         }
     }
 }

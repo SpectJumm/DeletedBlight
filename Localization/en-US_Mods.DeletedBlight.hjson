@@ -29,6 +29,7 @@ NPCs: {
 	AyakaDaiakumaBody.DisplayName: Ayaka Daiakuma
 	ArmoredSnake.DisplayName: Armored Snake
 	TestBoss.DisplayName: Test Boss
+	DeletedBlight.DisplayName: Deleted Blight
 }
 
 Items: {
@@ -165,6 +166,11 @@ Items: {
 
 	Slimeball: {
 		DisplayName: Slimeball
+		Tooltip: ""
+	}
+
+	DebugStick: {
+		DisplayName: Debug Stick
 		Tooltip: ""
 	}
 }

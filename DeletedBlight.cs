@@ -23,7 +23,7 @@ namespace DeletedBlight
         public override void Load()
         {
             #region Shaders
-            if (Main.netMode != NetmodeID.Server)
+            if (Main.netMode != NetmodeID.Server) // should I replace this with [!Main.dedServ]?
             {
                 // This is where we load our shader, and add it to the filter.
 
@@ -44,6 +44,7 @@ namespace DeletedBlight
                 GameShaders.Armor.BindShader(ModContent.ItemType<BSDye>(), new ArmorShaderData(anotherDye, "SomeBullshit"));
                 // Reminder to self: you don't need to do a .UseImage() if it's just gonna be a dye because you can assign the image in the dye code.
 
+                Asset<Effect> screenShatter = Assets.Request<Effect>("Assets/AutoloadedEffects/Shaders/OverlayModifiers/ScreenShatter");
 
             }
             #endregion Shaders
