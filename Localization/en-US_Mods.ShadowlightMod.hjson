@@ -30,6 +30,7 @@ NPCs: {
 	ArmoredSnake.DisplayName: Armored Snake
 	TestBoss.DisplayName: Test Boss
 	ShadowlightMod.DisplayName: Deleted Blight
+	DeletedBlight.DisplayName: Deleted Blight
 }
 
 Items: {
@@ -171,6 +172,16 @@ Items: {
 
 	DebugStick: {
 		DisplayName: Debug Stick
+		Tooltip: ""
+	}
+
+	AmalgamatedSkull: {
+		DisplayName: Amalgamated Skull
+		Tooltip: ""
+	}
+
+	TrapperTapper: {
+		DisplayName: Trapper Tapper
 		Tooltip: ""
 	}
 }

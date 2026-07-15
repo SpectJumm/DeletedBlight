@@ -24,8 +24,9 @@ namespace ShadowlightMod.Items
             if (!Main.dedServ)
             {
                 // Activate the screen shader
-                
+                Filters.Scene.Activate("ScreenShatter").GetShader().UseOpacity(1.0f);
                 return true;
+
             }
             return true;
         }

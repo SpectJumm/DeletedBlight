@@ -23,7 +23,7 @@ namespace ShadowlightMod
         public override void Load()
         {
             #region Shaders
-            if (Main.netMode != NetmodeID.Server) // should I replace this with [!Main.dedServ]?
+            if (!Main.dedServ) // if this isn't a dedicated server (which shaders can't run on)
             {
                 // This is where we load our shader, and add it to the filter.
 
@@ -45,7 +45,7 @@ namespace ShadowlightMod
                 // Reminder to self: you don't need to do a .UseImage() if it's just gonna be a dye because you can assign the image in the dye code.
 
                 Asset<Effect> screenShatter = Assets.Request<Effect>("Assets/AutoloadedEffects/Shaders/OverlayModifiers/ScreenShatter");
-
+                Filters.Scene["ShadowlightMod:ScreenShatter"] = new Filter(new ScreenShaderData(screenShatter, "ScreenShatter"), EffectPriority.VeryHigh);
             }
             #endregion Shaders
         }

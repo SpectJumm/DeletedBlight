@@ -25,7 +25,7 @@ float4 ScreenShatter(PSInput input) : COLOR0
 
     uv += frac(sin(dot(uv * 12.9898 + uTime * 0.1, float2(78.233, 43758.5453))) * 2.0 - 1.0) * 0.01; // add some random noise to the UVs for a glitch effect
 
-    return color;
+    return color * uOpacity;
 }
 
 technique Technique1
